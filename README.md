@@ -1,11 +1,11 @@
 # Nox Tab Footer v1.1
 
-适用 Minecraft Java 26.2。独立的数据包 + 资源包，命名空间 `nox_tab`，不依赖起床战争。
+适用 Minecraft Java 26.2。独立的数据包 + 资源包，命名空间 `nox_tab`
 
 ## 安装与使用
 
-1. 将 `Nox Tab Footer - Datapack.zip` 放入存档的 `datapacks`。
-2. 将 `Nox Tab Footer - Resourcepack.zip` 放入 `resourcepacks` 并启用。
+1. 将 `Tab Footer - Datapack.zip` 放入存档的 `datapacks`。
+2. 将 `Tab Footer - Resourcepack.zip` 放入 `resourcepacks` 并启用。
 3. 执行 `/reload`，客户端按 F3+T。
 4. `/trigger tab_footer` 打开编辑器，填入文案、数据读取对象及格式，点击保存。
 
@@ -13,7 +13,6 @@
 重置或保存空文本会删除文案与文本缓存，并关闭底部显示。编辑器可以重复打开。
 
 `/trigger tab_footer` 无需 OP。保存和重置调用原版管理命令，需要 OP；普通玩家不能更改全服文案。
-Solo 和 4s 已内置整合后的实现，不需要额外叠加这个独立包。
 
 ## 共享文案与目标选择器
 
@@ -101,6 +100,6 @@ data modify storage nox_tab:config settings.restore set value "health"
 function nox_tab:reset
 ```
 
-通用前置包的默认设置为空。Solo 和 4s 的整合版本只从 `data/bw/function/tab/config.mcfunction` 读取文案；修改后 `/reload` 生效，没有 trigger 或编辑对话框。独立库保留保存、重置及 OP 编辑功能。
+通用前置包的默认设置为空。
 
 v1.1 修正了 below_name 被 Tab 格式染色的问题。名字和文本组件的临时读取改用不可见、无碰撞的 item_display，同步清理早期版本残留的探针矿车。
