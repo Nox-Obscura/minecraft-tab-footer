@@ -1,4 +1,4 @@
-# Nox Tab Footer v1.1
+# Minecraft Tab Footer v1.1
 
 适用 Minecraft Java 26.2。独立的数据包 + 资源包，命名空间 `nox_tab`
 
